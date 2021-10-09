@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SECRETARIA DA EDUCAÇÃO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <style type="text/css">
+    @import url("./css/index.css");
+  </style>   
+  <style>
+    div.barra_vermelha_gradiente{
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 18%, rgba(255,0,0,1) 18%, rgba(128,26,12,1) 50%, rgba(0,0,0,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(18%, rgba(255,0,0,1)), color-stop(18%, rgba(255,0,0,1)), color-stop(50%, rgba(128,26,12,1)), color-stop(100%, rgba(0,0,0,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 18%, rgba(255,0,0,1) 18%, rgba(128,26,12,1) 50%, rgba(0,0,0,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 18%, rgba(255,0,0,1) 18%, rgba(128,26,12,1) 50%, rgba(0,0,0,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 18%, rgba(255,0,0,1) 18%, rgba(128,26,12,1) 50%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 18%, rgba(255,0,0,1) 18%, rgba(128,26,12,1) 50%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 );
+  } 
+  a.botao_menu{
+      color: #ffffff;
+      background: #ff0000;
+      background-image: -webkit-linear-gradient(top, #ff0000, #240108);
+      background-image: -moz-linear-gradient(top, #ff0000, #240108);
+      background-image: -ms-linear-gradient(top, #ff0000, #240108);
+      background-image: -o-linear-gradient(top, #ff0000, #240108);
+      background-image: linear-gradient(to bottom, #ff0000, #240108);
+
+      -webkit-border-radius: 10;
+      -moz-border-radius: 10;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 1px 3px #666666;  
+      -moz-box-shadow: 0px 1px 3px #666666;
+      box-shadow: 0px 1px 3px #666666;
+      
+      text-align:center;
+      font-family: Arial;
+      font-size:14px; 
+      text-decoration: none;
+      
+      padding: 6px 5px 10px 5px;
+      display:block;
+      float:left;
+      height: 35px;
+      width: 125px;
+      border: solid #ffffff 1px;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+    a.botao_menu:hover {
+        color: #ffffff;
+        background: #28623e;
+        background-image: -webkit-linear-gradient(top, #28623e, #062110);
+        background-image: -moz-linear-gradient(top, #28623e, #062110);
+        background-image: -ms-linear-gradient(top, #28623e, #062110);
+        background-image: -o-linear-gradient(top, #28623e, #062110);
+        background-image: linear-gradient(to bottom, #28623e, #062110);
+        
+        text-decoration: none;
+    }
+    a.botao_menu_ativo {
+      color: #ffffff;
+      background: #28623e;
+      background-image: -webkit-linear-gradient(top, #28623e, #062110);
+      background-image: -moz-linear-gradient(top, #28623e, #062110);
+      background-image: -ms-linear-gradient(top, #28623e, #062110);
+      background-image: -o-linear-gradient(top, #28623e, #062110);
+      background-image: linear-gradient(to bottom, #28623e, #062110);
+      text-decoration: none;
+      -webkit-border-radius: 10;
+      -moz-border-radius: 10;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 1px 3px #666666;  
+      -moz-box-shadow: 0px 1px 3px #666666;
+      box-shadow: 0px 1px 3px #666666;
+      
+      text-align:center;
+      font-family: Arial;
+      font-size:14px; 
+      text-decoration: none;
+      
+      padding: 6px 5px 10px 5px;
+      display:block;
+      float:left;
+      height: 35px;
+      width: 125px;
+      border: solid #ffffff 1px;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+    div.center{
+      display:block;
+      margin-left:auto;
+      margin-right: auto;
+      clear:center;
+      min-height: 1px;
+    }
+    #app{
+      border: solid #c32914 15px;
+      -webkit-border-bottom-right-radius: 3px;
+      -webkit-border-bottom-left-radius: 3px;
+      -moz-border-radius-bottomright: 3px;
+      -moz-border-radius-bottomleft: 3px;
+      border-bottom-right-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+  </style> 
+</head>
+  <body>
+    <div style="height:35px;width:100%;display:block;background-color:#000000"></div>	
+    <div class="container">
+      <div class="row" style="height:95px;background-color:#28623e;padding-top:8px;">
+        <div class="col-xs-1"><img src="./img/brasaooficial.png" style="float:left;"></div>
+        <div class="col-xs-10" style="text-align: center;color:white;margin-left:0px">
+          <div  style="font-family: Arial Black,ArialBlack;font-size: 25px;font-weight: normal;color: #ffffff;">MUNICÍPIO DE TOLEDO</div>
+          <div  style="font-family: Arial Black,ArialBlack;font-size: 36px;font-weight: normal;color: #ffffff;">SECRETARIA MUNICIPAL DA EDUCAÇÃO</div>
+        </div>
+        <div class="col-xs-1"><img src="./img/logo_educacao.jpg" style="float: right;" ></div>
+      </div>	      
+      <div class="row barra_vermelha_gradiente" style="height:80px;">
+          <div class="center" style="width:800px;padding-top: 28px;">
+            <a class="botao_menu" href="http://www.toledo.pr.gov.br/escola/smed/" style="height:35px; width:125px;" onclick="return app.carrega_link(this);">INÍCIO</a>
+            <a class="botao_menu" href="http://www.toledo.pr.gov.br/escola/smed/administracao.html" style="height:35px; width:125px;" onclick="return app.carrega_link(this);">ADMINISTRAÇÃO</a>
+            <a class="botao_menu" href="http://www.toledo.pr.gov.br/escola/smed/dep_ensino.html" style="height:35px; width:125px;" onclick="return app.carrega_link(this);">ENSINO</a>
+            <a class="botao_menu" href="http://www.toledo.pr.gov.br/escola/smed/educacaoinfantil.html" style="height:35px; width:125px;" onclick="return app.carrega_link(this);">ED.INFANTIL</a>
+            <a class="botao_menu" href="http://www.toledo.pr.gov.br/escola/smed/neadi.html" style="height:35px; width:125px;" onclick="return app.carrega_link(this);">NEADI</a>
+            <a class="botao_menu" href="http://www.toledo.pr.gov.br/?q=pagina/conselho-municipal-de-educacao" style="height:35px; width:125px;" onclick="return app.carrega_link(this);">CONSELHO</a>
+          </div>
+      </div>
+
+      <div id="app" class="row">
+        
+          {{ conteudo }}
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="./js/index.js"></script>
+</html>
+
